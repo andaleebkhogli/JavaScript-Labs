@@ -1,0 +1,36 @@
+ function random2 (x){
+
+    result = [];
+    if(x<10)
+    {
+        for(i=0; i<x; i++)
+            {
+               
+               var ran=(Math.floor(Math.random()*10));
+               if(!result.includes(result[i]))
+               result[i] = ran;  
+               //console.log(result[i]);
+                else
+                    i--;
+            }
+    }
+    // if length > 10 that return array of length 10
+    else if(x>10)
+    {
+        for(i=0; i<10; i++)
+        {
+            //generate random between(0,10)
+            var ran=(Math.floor(Math.random()*10));
+            //check if random in array 
+            if(!result.includes(ran))
+                result[i] = ran;
+            else
+            // if not existed remove it for the empty index
+                i--;
+        }
+    }
+
+
+    //else return array with length of x
+    return result;
+}

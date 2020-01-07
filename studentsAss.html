@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+  
+<style>
+        body {
+            margin: 70px 300px;
+            font-family: Andalus;
+            font-size:x-large;
+            font-weight:bold;
+			background-color:lightGrey;
+        }
+        [type=text],[type=button]
+        {
+            font-family:'Century Gothic';
+            font-size:large;
+        }
+
+        table {
+            width: 400px;
+        }
+
+        .SD {
+            background-color: lightpink;
+        }
+
+        .OS {
+            background-color: lightyellow;
+        }
+
+        .EL {
+            background-color: lightskyblue;
+        }
+    </style>
+
+         
+    
+</head>
+<body>
+ 
+    <form>
+        <table>
+            <tr>
+                <td colspan="2">
+                    Department:
+                    <input type="radio" name="news" value="SD" checked="checked" />SD
+                    <input type="radio" name="news" value="OS" />OS
+                    <input type="radio" name="news" value="EL" />EL
+                </td>
+            </tr>
+            <tr><td>StudentName<input type="text" name = "stdname" value="add here" /></td></tr>
+            <tr><td>StudentGrade<input type="text" name = "grdname" value="add here"/></td></tr>
+			<tr><td><input type="button" id="Addbtn" value="Add" /></td></tr>
+              <tr><td>Filter
+                <select id="studentsFilter">
+                        <option>All</option>
+                        <option>Passed</option>
+                        <option>Failed</option>
+                    </select>
+        </td></tr>
+        </table>
+        </form>
+           
+                <table id="studentTable">
+        
+                    <tr>
+                    <td>Name-</td>
+                    <tdGrade-</td>
+                    <td>Dep-</td>
+                    <td>Delete-</td>
+                    </tr>
+
+        
+            
+
+                </table>
+            
+
+<script src = "lastassig.js"></script>
+</body>
+</html>
